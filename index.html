@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <!-- Google SEO 核心元数据 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monster Survivors - 终极怪物生存 Roguelike 游戏 | MonsterSurvivors.com</title>
+    <meta name="description" content="在 Monster Survivors 中体验终极生存挑战！融合 Roguelike 元素与动作策略，解锁独特技能组合，在怪物狂潮中杀出血路。立即免费在线游玩！">
+    <meta name="keywords" content="Monster Survivors, 怪物生存游戏, Roguelike 游戏, 在线生存游戏, 免费网页游戏, 动作策略游戏">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- 自定义 CSS -->
+    <style>
+        .game-iframe {
+            aspect-ratio: 16/9;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="%234a5568" font-size="1.2em">Loading...</text></svg>') no-repeat center;
+        }
+        
+        @media (max-width: 640px) {
+            .game-iframe {
+                aspect-ratio: 9/16;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-gray-900 to-gray-800 min-h-screen text-gray-100">
+    <!-- 导航 -->
+    <nav class="bg-black/50 backdrop-blur-sm py-4 sticky top-0 z-50">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold text-red-500 hover:text-red-400 transition-colors">
+                MonsterSurvivors
+            </a>
+            <div class="space-x-6">
+                <a href="#gameplay" class="hover:text-red-400 transition-colors">游戏特色</a>
+                <a href="#guide" class="hover:text-red-400 transition-colors">新手攻略</a>
+                <a href="#community" class="hover:text-red-400 transition-colors">社区</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主内容区 -->
+    <main class="container mx-auto px-4 py-12">
+        <!-- 游戏标题区 -->
+        <header class="text-center mb-16">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-red-500 to-orange-400 bg-clip-text text-transparent">
+                Monster Survivors
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
+                在随机生成的末日世界中生存，组合独特技能，挑战无尽怪物浪潮！每次游玩都是全新体验！
+            </p>
+            
+            <!-- 游戏iframe -->
+            <div class="mx-auto rounded-lg overflow-hidden shadow-2xl border-4 border-red-500/30 hover:border-red-500/50 transition-all duration-300">
+                <iframe 
+                    src="https://cloud.onlinegames.io/games/2025/unity/monster-survivors/index-og.html" 
+                    class="w-full game-iframe"
+                    allow="autoplay; fullscreen"
+                    loading="eager"
+                    title="Monster Survivors 在线游戏"
+                ></iframe>
+            </div>
+        </header>
+
+        <!-- 游戏特色 -->
+        <section id="gameplay" class="mb-20">
+            <h2 class="text-3xl font-bold mb-8 text-red-400 border-l-4 border-red-500 pl-4">核心游戏特色</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="p-6 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors">
+                    <h3 class="text-xl font-semibold mb-3">动态技能组合</h3>
+                    <p class="text-gray-400">150+ 种独特技能随机组合，每次游玩都能创造全新战斗流派</p>
+                </div>
+                <div class="p-6 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors">
+                    <h3 class="text-xl font-semibold mb-3">无尽模式挑战</h3>
+                    <p class="text-gray-400">智能难度曲线，超过50种独特怪物类型，生存越久奖励越丰厚</p>
+                </div>
+                <div class="p-6 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors">
+                    <h3 class="text-xl font-semibold mb-3">永久升级系统</h3>
+                    <p class="text-gray-400">解锁角色天赋，升级基地设施，打造属于你的生存策略</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 游戏描述 -->
+        <section class="prose prose-invert max-w-3xl mx-auto mb-20">
+            <h2 class="text-red-400">关于 Monster Survivors</h2>
+            <p>作为 2023 年最受期待的生存类 Roguelike 游戏，Monster Survivors 将带给您前所未有的生存体验。游戏采用先进的物理引擎打造，每个怪物都有独特的 AI 行为模式，玩家需要：</p>
+            <ul>
+                <li>动态调整战斗策略应对不同敌人组合</li>
+                <li>收集神秘遗物增强角色能力</li>
+                <li>解锁隐藏角色和特殊剧情关卡</li>
+                <li>挑战每日限定模式赢取稀有奖励</li>
+            </ul>
+            <p>游戏支持多语言界面，全球玩家排行榜实时更新，现在加入即可参与赛季挑战！</p>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="bg-black/30 py-8 mt-20">
+        <div class="container mx-auto px-4 text-center text-gray-400">
+            <p>&copy; 2023 MonsterSurvivors.com - 保留所有权利</p>
+            <div class="mt-4 space-x-6">
+                <a href="/privacy" class="hover:text-red-400">隐私政策</a>
+                <a href="/terms" class="hover:text-red-400">用户协议</a>
+                <a href="/contact" class="hover:text-red-400">联系我们</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
